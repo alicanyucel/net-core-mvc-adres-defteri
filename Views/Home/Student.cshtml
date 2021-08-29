@@ -1,0 +1,31 @@
+@model School.Models.Student
+@{
+    ViewData["Title"] = "Student";
+}
+<h1>@ViewData["Title"]</h1>
+<form method="POST" asp-action="Create" autocomplete="off">
+    <div class="form-group">
+        <input type="hidden" asp-for="Id">
+        <input type="text" asp-for="Name" class="form-control" placeholder="adınız">
+    </div>
+       <div class="form-group">
+        <input type="text" asp-for="Surname" class="form-control" placeholder="Soyadınız">
+    </div>
+       <div class="form-group">
+        <input type="text" asp-for="Age" class="form-control" placeholder="yaşınız">
+    </div>
+    <div class="form-group">
+        <input type="text" asp-for="Email" class="form-control" placeholder="emaili yaz">
+    </div>
+    <div class="form-group">
+        <input type="text" asp-for="Telefon" class="form-control" placeholder="telefon">
+    </div>
+    <div class="form-group">
+        <input type="text" asp-for="Adres" class="form-control" placeholder="adres yaz">
+    </div>
+       <div class="form-group">
+        <button type="submit" class="btn btn-primary" >Ekle</button>
+       
+    </div>
+</form>
+
